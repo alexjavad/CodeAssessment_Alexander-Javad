@@ -10,7 +10,7 @@ namespace CodeAssessment_Alexander_Javad
     {
         static void Main(string[] args)
         {
-            //usually would have an EntityFramework DbSet to hold this dataset but I'll model that collection as a List<Transactions> and use Linq to operate on it for brevity.
+            //usually would have an EntityFramework DbSet to hold this dataset but I'll model that collection as a List<Transactions>.
             List<Transaction> transactions = new List<Transaction>(100);
 
             int numberOfRecords = 100;            

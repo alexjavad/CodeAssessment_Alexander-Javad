@@ -31,7 +31,7 @@ namespace CodeAssessment_Alexander_Javad
                 {
                     Id = Guid.NewGuid(),
                     Amount = Math.Round(randomAmount, 2),
-                    OrderDetails = "{ 'ProductId1': 2, 'ProductId3: 4, ...'",
+                    OrderDetails = "{ 'ProductId1': 2, 'ProductId3': 4, ... }",
                     CustomerId = Guid.NewGuid()
                 });
             }

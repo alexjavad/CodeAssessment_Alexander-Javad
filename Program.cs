@@ -29,7 +29,7 @@ namespace CodeAssessment_Alexander_Javad
                 });
             }
 
-            Console.WriteLine(CalculateRewardsPoints(transactions));
+            Console.WriteLine("Total Rewards Points: " + CalculateRewardsPoints(transactions));
             Console.ReadKey();
         }
 
@@ -52,6 +52,8 @@ namespace CodeAssessment_Alexander_Javad
                     t.RewardsPoints += points;
                     totalRewardsPoints += points;
                 }
+
+                Console.WriteLine(string.Format("Rewards Points for Transaction ({0}) with Amount ({1}) = {2}", t.Id, t.Amount, t.RewardsPoints));
             }
 
             return totalRewardsPoints;

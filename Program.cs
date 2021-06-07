@@ -11,15 +11,22 @@ namespace CodeAssessment_Alexander_Javad
         static void Main(string[] args)
         {
             //usually would have an EntityFramework DbSet to hold this dataset but I'll model that collection as a List<Transactions> and use Linq to operate on it for brevity.
-            List<Transaction> transactions = new List<Transaction>(10);
+            List<Transaction> transactions = new List<Transaction>(100);
 
-            int arbitraryMaxAmount = 500;
             int numberOfRecords = 100;            
 
             for (int i = 0; i < numberOfRecords; i++)
             {
                 double randNum = new Random().NextDouble();
-                decimal randomAmount = (decimal)(randNum * arbitraryMaxAmount);
+                decimal randomAmount = 0M;
+
+                // without this, I was getting the same random number over and over again
+                var task = Task.Run(() => GetRandomAmount(randNum));
+                if (task.Wait(TimeSpan.FromMilliseconds(200)))
+                    randomAmount = task.Result;
+
+                // if you set a breakpoint on this line, the randomAmount variable will show an actually different amount on each iteration.
+                // The speed of computation likely causes the random number generator to set itself as a constant for some reason.
                 transactions.Add(new Transaction()
                 {
                     Id = Guid.NewGuid(),
@@ -57,6 +64,12 @@ namespace CodeAssessment_Alexander_Javad
             }
 
             return totalRewardsPoints;
+        }
+
+        private static decimal GetRandomAmount(double randNum)
+        {
+            double arbitraryMaxAmount = 500;
+            return (decimal)(randNum * arbitraryMaxAmount);
         }
     }
 

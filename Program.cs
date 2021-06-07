@@ -49,7 +49,7 @@ namespace CodeAssessment_Alexander_Javad
                 {
                     int unitsOver50 = int.Parse(decimal.Truncate(t.Amount).ToString()) - 50;
                     t.RewardsPoints += unitsOver50;
-                    totalRewardsPoints = unitsOver50;
+                    totalRewardsPoints += unitsOver50;
                 }
                 else if (100 < t.Amount)
                 {

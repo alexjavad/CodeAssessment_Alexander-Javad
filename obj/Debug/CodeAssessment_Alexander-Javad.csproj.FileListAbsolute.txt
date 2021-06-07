@@ -1,0 +1,7 @@
+C:\Users\alexj\Source\Drafts\CodeAssessment_Alexander-Javad\bin\Debug\CodeAssessment_Alexander-Javad.exe.config
+C:\Users\alexj\Source\Drafts\CodeAssessment_Alexander-Javad\bin\Debug\CodeAssessment_Alexander-Javad.exe
+C:\Users\alexj\Source\Drafts\CodeAssessment_Alexander-Javad\bin\Debug\CodeAssessment_Alexander-Javad.pdb
+C:\Users\alexj\Source\Drafts\CodeAssessment_Alexander-Javad\obj\Debug\CodeAssessment_Alexander-Javad.csprojAssemblyReference.cache
+C:\Users\alexj\Source\Drafts\CodeAssessment_Alexander-Javad\obj\Debug\CodeAssessment_Alexander-Javad.csproj.CoreCompileInputs.cache
+C:\Users\alexj\Source\Drafts\CodeAssessment_Alexander-Javad\obj\Debug\CodeAssessment_Alexander-Javad.exe
+C:\Users\alexj\Source\Drafts\CodeAssessment_Alexander-Javad\obj\Debug\CodeAssessment_Alexander-Javad.pdb

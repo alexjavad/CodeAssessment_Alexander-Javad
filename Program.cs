@@ -79,7 +79,6 @@ namespace CodeAssessment_Alexander_Javad
         public decimal Amount { get; set; }
         public string OrderDetails { get; set; }
         public Guid CustomerId { get; set; }
-
         public int RewardsPoints { get; set; }
     }
 }
